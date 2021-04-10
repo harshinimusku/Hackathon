@@ -26,7 +26,7 @@
 		<script src="evo-calendar.min.js"></script>
 		
 		<script>
-			<!-- Initializing the calendar-->
+			/* Initializing the calendar */
 			$(document).ready(function() {
 				$('#calendar').evoCalendar({
 					'theme': 'Midnight Blue',
@@ -59,12 +59,12 @@
 		</div>
 		
 		<script>
-			<!-- Displays the pop up when the date is clicked -->
+			/* Displays the pop up when the date is clicked */
 			$('#calendar').on('selectDate', function(event, newDate, oldDate) {
 				document.getElementById('addEvent').style.display='block';
 			});
 			
-			<!-- A function for adding an event when a date, name, and desc are given -->
+			/* A function for adding an event when a date, name, and desc are given */
 			function addE(){
 				var date = $('#calendar').evoCalendar('getActiveDate');
 				var nme = 'Event name';
